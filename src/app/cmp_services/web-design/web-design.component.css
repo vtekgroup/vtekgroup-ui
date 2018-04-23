@@ -1,0 +1,13 @@
+.carousel {
+    margin-bottom: 0rem;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+.fixed-top {
+  top: 65px;
+  z-index: 999;
+}
+

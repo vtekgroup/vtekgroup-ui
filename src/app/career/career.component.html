@@ -1,0 +1,93 @@
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <img class="first-slide" src="assets/images/career-banner.jpg" alt="First slide">
+      <div class="container">
+        <div class="carousel-caption d-none d-md-block text-left">
+          <h1>Careers</h1>
+          <!--<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="container career">
+  <div class="blog-header">
+    <div class="container">
+      <h1 class="blog-title">Careers</h1>
+      <p class="lead blog-description">As per the Vtekgroup culture, we encourage our employees to believe in their abilities and their freedom of expression. They are taught to take up challenges and produce quality output.
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 blog-main">
+        <div class="blog-post">
+          <h2 class="blog-post-title">Why works with us</h2>
+          <p>Vtekgroup deliver services to various domain client with there excellence in execution team.
+            Vtekgroup works on multiple approaches like Agile, Waterfall, Collaborative approach for custom application development.
+            We are currently located at Gandhinagar city in Gujarat known as IT hub for Gujarat.</p>
+          <hr>
+          <h3>Why Vtekgroup</h3>
+          <p></p>
+        </div><!-- /.blog-sidebar -->
+      </div><!-- /.row -->
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="tab">
+          <button class="tablinks" [ngClass]="{active: selectedTab == 0}" (click)="changeSelectedTab(0)">Career and Development</button>
+          <button class="tablinks" [ngClass]="{active: selectedTab == 1}" (click)="changeSelectedTab(1)">Innovative Technology stack</button>
+          <button class="tablinks" [ngClass]="{active: selectedTab == 2}" (click)="changeSelectedTab(2)">Freedom to learn new technology</button>
+          <button class="tablinks" [ngClass]="{active: selectedTab == 3}" (click)="changeSelectedTab(3)">Work Life Balance</button>
+          <button class="tablinks" [ngClass]="{active: selectedTab == 4}" (click)="changeSelectedTab(4)">Reward and Recognition</button>
+          <button class="tablinks" [ngClass]="{active: selectedTab == 5}" (click)="changeSelectedTab(5)">Value and Leadership</button>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div id="career" class="blog-post" *ngIf="selectedTab == 0">
+          <h3 class="blog-post-title">Career and Development</h3>
+          <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="innovative" *ngIf="selectedTab == 1">
+          <h3>Innovative Technology stack</h3>
+          <p>Paris is the capital of France.</p>
+        </div>
+
+        <div id="technology" *ngIf="selectedTab == 2">
+          <h3>Freedom to learn new technology</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+
+        <div id="balance" *ngIf="selectedTab == 3">
+          <h3>Work Life Balance</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+
+        <div id="rewards" *ngIf="selectedTab == 4">
+          <h3>Reward and Recognition</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+
+        <div id="value" *ngIf="selectedTab == 5">
+          <h3>Value and Leadership</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
