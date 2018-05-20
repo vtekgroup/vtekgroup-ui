@@ -14,10 +14,10 @@ export class ServiceComponent implements OnInit,AfterViewInit {
   }
 
   ngAfterViewInit() {
-        $( document ).ready(function() {
-          console.log('here', $('#loader'));
-          $('#loader').delay(1000).fadeOut('slow');
-        });
-    }
+      $( document ).ready(function() {
+        console.log('here', $('#loader'));
+        $('#loader').delay(1000).fadeOut('slow');
+      });
+  }
 
 }

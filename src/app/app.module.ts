@@ -27,12 +27,14 @@ import { ServiceComponent } from './service/service.component';
 import { TeamComponent } from './team/team.component';
 import { BlogComponent } from './blog/blog.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ItStaffingComponent } from './it-staffing/it-staffing.component';
 
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'service', component: ServiceComponent },
+  { path: 'it-staffing', component: ItStaffingComponent },
   { path: 'services', children: [
     { path: 'custom_web_development', component: CustomWebDevelopmentComponent, children: [
         { path: '', component: CustomWebDevelopmentHomeComponent },
@@ -82,7 +84,8 @@ const appRoutes: Routes = [
     ServiceComponent,
     TeamComponent,
     BlogComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ItStaffingComponent
   ],
   imports: [
     BrowserModule,
